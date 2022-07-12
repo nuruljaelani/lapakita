@@ -77,7 +77,7 @@
         </footer>
     </div>
     <script src="{{ secure_asset('assets/splide/js/splide.min.js') }}" lang="javascript/text"></script>
-    @yield('script')
+    @yield("script")
 </body>
 
 </html>
