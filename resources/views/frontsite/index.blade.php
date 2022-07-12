@@ -1,7 +1,7 @@
 @extends('layouts.frontsite')
 
 @section('title')
-    lapakita.com
+    Home
 @endsection
 
 @section('content')
