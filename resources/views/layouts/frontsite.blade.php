@@ -9,7 +9,7 @@
       rel="stylesheet">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="{{ secure_asset('vendor/dist/css/splide.min.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('assets/splide/css/splide.min.css') }}">
     <script defer src="https://unpkg.com/alpinejs@3.10.2/dist/cdn.min.js"></script>
     @vite('resources/css/app.css')
 </head>
@@ -76,7 +76,7 @@
             </div>
         </footer>
     </div>
-    <script src="{{ secure_asset('vendor/dist/js/splide.min.js') }}" lang="javascript/text"></script>
+    <script src="{{ secure_asset('assets/splide/js/splide.min.js') }}" lang="javascript/text"></script>
     @yield('script')
 </body>
 
