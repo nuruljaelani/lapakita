@@ -8,7 +8,7 @@
     <div class="bg-white rounded-xl p-2 md:p-4 lg:p-6 shadow-sm drop-shadow-md">
         <div class="flex space-x-0 md:space-x-8 lg:space-x-10 px-4 md:px-10">
             <div class="hidden md:block w-1/2">
-                <img src="{{ asset('assets/images/FridayOnline-Shopping.png') }}" />
+                <img src="{{ secure_asset('assets/images/FridayOnline-Shopping.png') }}" />
             </div>
             <div class="w-full md:w-1/2 flex flex-col space-y-4 md:space-y-6 items-center">
                 <p class="text-indigo-800 font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl">Masuk ke akunmu</p>

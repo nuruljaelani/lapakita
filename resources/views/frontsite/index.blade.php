@@ -18,7 +18,7 @@
                     <ul class="splide__list">
                         <li class="splide__slide h-full" data-splide-interval="5000">
                             <div class="flex flex-col bg-white rounded-md">
-                                <img src="{{ asset('assets/images/products/5b8924b7e72ae308b7767e2e82c2458a.jpg') }}"
+                                <img src="{{ secure_asset('assets/images/products/5b8924b7e72ae308b7767e2e82c2458a.jpg') }}"
                                     class="rounded-md h-full" />
                                 <div class="flex flex-col p-2 space-y-2">
                                     <p class="text-sm font-semibold leading-none truncate">Lorem ipsum dolor sit amet
@@ -34,7 +34,7 @@
                         </li>
                         <li class="splide__slide" data-splide-interval="5000">
                             <div class="flex flex-col bg-white rounded-md">
-                                <img src="{{ asset('assets/images/products/f32e749f5cc76d3a117b04a4ad5a72e8.jpg') }}"
+                                <img src="{{ secure_asset('assets/images/products/f32e749f5cc76d3a117b04a4ad5a72e8.jpg') }}"
                                     class="rounded-md" />
                                 <div class="flex flex-col p-2 space-y-2">
                                     <p class="text-sm font-semibold leading-none truncate">Lorem ipsum dolor sit amet
@@ -50,7 +50,7 @@
                         </li>
                         <li class="splide__slide" data-splide-interval="5000">
                             <div class="flex flex-col bg-white rounded-md">
-                                <img src="{{ asset('assets/images/products/ThumbnailE.png') }}" class="rounded-md" />
+                                <img src="{{ secure_asset('assets/images/products/ThumbnailE.png') }}" class="rounded-md" />
                                 <div class="flex flex-col p-2 space-y-2">
                                     <p class="text-sm font-semibold leading-none truncate">Lorem ipsum dolor sit amet
                                         consectetur</p>
@@ -65,7 +65,7 @@
                         </li>
                         <li class="splide__slide" data-splide-interval="5000">
                             <div class="flex flex-col bg-white rounded-md">
-                                <img src="{{ asset('assets/images/products/Baterai-ABC-Alkaline-2pcs-AAA-1.jpg') }}"
+                                <img src="{{ secure_asset('assets/images/products/Baterai-ABC-Alkaline-2pcs-AAA-1.jpg') }}"
                                     class="rounded-md" />
                                 <div class="flex flex-col p-2 space-y-2">
                                     <p class="text-sm font-semibold leading-none truncate">Lorem ipsum dolor sit amet
@@ -81,7 +81,7 @@
                         </li>
                         <li class="splide__slide" data-splide-interval="5000">
                             <div class="flex flex-col bg-white rounded-md">
-                                <img src="{{ asset('assets/images/products/S22_Ultra_Carousel_GroupKV_MO.webp') }}"
+                                <img src="{{ secure_asset('assets/images/products/S22_Ultra_Carousel_GroupKV_MO.webp') }}"
                                     class="rounded-md" />
                                 <div class="flex flex-col p-2 space-y-2">
                                     <p class="text-sm font-semibold leading-none truncate">Lorem ipsum dolor sit amet
@@ -97,7 +97,7 @@
                         </li>
                         <li class="splide__slide" data-splide-interval="5000">
                             <div class="flex flex-col bg-white rounded-md h-full">
-                                <img src="{{ asset('assets/images/products/m171-gallery-grey-1.webp') }}"
+                                <img src="{{ secure_asset('assets/images/products/m171-gallery-grey-1.webp') }}"
                                     class="rounded-md h-full" />
                                 <div class="flex flex-col p-2 space-y-2">
                                     <p class="text-sm font-semibold leading-none truncate">Lorem ipsum dolor sit amet
@@ -133,7 +133,7 @@
             <div class="grid grid-cols-3 md:grid-cols-6 px-4 md:px-8 gap-4">
                 <div class="flex flex-col bg-white shadow rounded-md items-center space-y-2 p-2">
                     <div class="bg-white p-4 rounded h-full flex items-center">
-                        <img src="{{ asset('assets/images/brand/acer.png') }}" />
+                        <img src="{{ secure_asset('assets/images/brand/acer.png') }}" />
                     </div>
                     <div class="flex flex-col bg-emerald-100 rounded w-full items-center p-2">
                         <p class="text-sm md:text-base font-semibold text-emerald-600">Acer</p>
@@ -141,7 +141,7 @@
                 </div>
                 <div class="flex flex-col bg-white shadow rounded-md items-center space-y-2 p-2">
                     <div class="bg-white p-4 h-full flex items-center">
-                        <img src="{{ asset('assets/images/brand/erigo.webp') }}" />
+                        <img src="{{ secure_asset('assets/images/brand/erigo.webp') }}" />
                     </div>
                     <div class="flex flex-col bg-emerald-100 rounded w-full items-center p-2">
                         <p class="text-sm md:text-base font-semibold text-emerald-600">Erigo</p>
@@ -149,7 +149,7 @@
                 </div>
                 <div class="flex flex-col bg-white shadow rounded-md items-center space-y-2 p-2">
                     <div class="bg-white p-4 h-full flex items-center">
-                        <img src="{{ asset('assets/images/brand/fantech.png') }}" />
+                        <img src="{{ secure_asset('assets/images/brand/fantech.png') }}" />
                     </div>
                     <div class="flex flex-col bg-emerald-100 rounded w-full items-center p-2">
                         <p class="text-sm md:text-base font-semibold text-emerald-600">Fantech</p>
@@ -157,7 +157,7 @@
                 </div>
                 <div class="flex flex-col bg-white shadow rounded-md items-center space-y-2 p-2">
                     <div class="bg-white p-4 h-full flex items-center">
-                        <img src="{{ asset('assets/images/brand/kahf.png') }}" />
+                        <img src="{{ secure_asset('assets/images/brand/kahf.png') }}" />
                     </div>
                     <div class="flex flex-col bg-emerald-100 rounded w-full items-center p-2">
                         <p class="text-sm md:text-base font-semibold text-emerald-600">Kahf</p>
@@ -165,7 +165,7 @@
                 </div>
                 <div class="flex flex-col bg-white shadow rounded-md items-center space-y-2 p-2">
                     <div class="bg-white p-4 h-full flex items-center">
-                        <img src="{{ asset('assets/images/brand/nestle.png') }}" />
+                        <img src="{{ secure_asset('assets/images/brand/nestle.png') }}" />
                     </div>
                     <div class="flex flex-col bg-emerald-100 rounded w-full items-center p-2">
                         <p class="text-sm md:text-base font-semibold text-emerald-600">Nestle</p>
@@ -173,7 +173,7 @@
                 </div>
                 <div class="flex flex-col bg-white shadow rounded-md items-center space-y-2 p-2">
                     <div class="bg-white p-4 h-full flex items-center">
-                        <img src="{{ asset('assets/images/brand/vivo.png') }}" />
+                        <img src="{{ secure_asset('assets/images/brand/vivo.png') }}" />
                     </div>
                     <div class="flex flex-col bg-emerald-100 rounded w-full items-center p-2">
                         <p class="text-sm md:text-base font-semibold text-emerald-600">Vivo</p>
@@ -192,7 +192,7 @@
                     <li class="splide__slide" data-splide-interval="5000">
                         <a href="{{route('frontsite.detail-product')}}">
                             <div class="flex flex-col bg-white rounded-md h-full shadow-md drop-shadow-lg">
-                                <img src="{{ asset('assets/images/products/5b8924b7e72ae308b7767e2e82c2458a.jpg') }}"
+                                <img src="{{ secure_asset('assets/images/products/5b8924b7e72ae308b7767e2e82c2458a.jpg') }}"
                                     class="rounded-md h-full" />
                                 <div class="flex flex-col p-2 space-y-2">
                                     <p class="text-sm font-semibold leading-none truncate">Lorem ipsum dolor sit amet
@@ -208,7 +208,7 @@
                     </li>
                     <li class="splide__slide" data-splide-interval="5000">
                         <div class="flex flex-col bg-white rounded-md h-full shadow-md drop-shadow-lg">
-                            <img src="{{ asset('assets/images/products/f32e749f5cc76d3a117b04a4ad5a72e8.jpg') }}"
+                            <img src="{{ secure_asset('assets/images/products/f32e749f5cc76d3a117b04a4ad5a72e8.jpg') }}"
                                 class="rounded-md" />
                             <div class="flex flex-col p-2 space-y-2">
                                 <p class="text-sm font-semibold leading-none truncate">Lorem ipsum dolor sit amet
@@ -223,7 +223,7 @@
                     </li>
                     <li class="splide__slide" data-splide-interval="5000">
                         <div class="flex flex-col bg-white rounded-md h-full shadow-md drop-shadow-lg">
-                            <img src="{{ asset('assets/images/products/ThumbnailE.png') }}" class="rounded-md" />
+                            <img src="{{ secure_asset('assets/images/products/ThumbnailE.png') }}" class="rounded-md" />
                             <div class="flex flex-col p-2 space-y-2">
                                 <p class="text-sm font-semibold leading-none truncate">Lorem ipsum dolor sit amet
                                     consectetur</p>
@@ -237,7 +237,7 @@
                     </li>
                     <li class="splide__slide" data-splide-interval="5000">
                         <div class="flex flex-col bg-white rounded-md h-full shadow-md drop-shadow-lg">
-                            <img src="{{ asset('assets/images/products/Baterai-ABC-Alkaline-2pcs-AAA-1.jpg') }}"
+                            <img src="{{ secure_asset('assets/images/products/Baterai-ABC-Alkaline-2pcs-AAA-1.jpg') }}"
                                 class="rounded-md" />
                             <div class="flex flex-col p-2 space-y-2">
                                 <p class="text-sm font-semibold leading-none truncate">Lorem ipsum dolor sit amet
@@ -252,7 +252,7 @@
                     </li>
                     <li class="splide__slide" data-splide-interval="5000">
                         <div class="flex flex-col bg-white rounded-md h-full shadow-md drop-shadow-lg">
-                            <img src="{{ asset('assets/images/products/S22_Ultra_Carousel_GroupKV_MO.webp') }}"
+                            <img src="{{ secure_asset('assets/images/products/S22_Ultra_Carousel_GroupKV_MO.webp') }}"
                                 class="rounded-md" />
                             <div class="flex flex-col p-2 space-y-2">
                                 <p class="text-sm font-semibold leading-none truncate">Lorem ipsum dolor sit amet
@@ -267,7 +267,7 @@
                     </li>
                     <li class="splide__slide" data-splide-interval="5000">
                         <div class="flex flex-col bg-white rounded-md h-full shadow-md drop-shadow-lg">
-                            <img src="{{ asset('assets/images/products/m171-gallery-grey-1.webp') }}"
+                            <img src="{{ secure_asset('assets/images/products/m171-gallery-grey-1.webp') }}"
                                 class="rounded-md h-full" />
                             <div class="flex flex-col p-2 space-y-2">
                                 <p class="text-sm font-semibold leading-none truncate">Lorem ipsum dolor sit amet
@@ -282,7 +282,7 @@
                     </li>
                     <li class="splide__slide" data-splide-interval="5000">
                         <div class="flex flex-col bg-white rounded-md h-full shadow-md drop-shadow-lg">
-                            <img src="{{ asset('assets/images/products/m171-gallery-grey-1.webp') }}"
+                            <img src="{{ secure_asset('assets/images/products/m171-gallery-grey-1.webp') }}"
                                 class="rounded-md h-full" />
                             <div class="flex flex-col p-2 space-y-2">
                                 <p class="text-sm font-semibold leading-none truncate">Lorem ipsum dolor sit amet
@@ -297,7 +297,7 @@
                     </li>
                     <li class="splide__slide" data-splide-interval="5000">
                         <div class="flex flex-col bg-white rounded-md h-full shadow-md drop-shadow-lg">
-                            <img src="{{ asset('assets/images/products/m171-gallery-grey-1.webp') }}"
+                            <img src="{{ secure_asset('assets/images/products/m171-gallery-grey-1.webp') }}"
                                 class="rounded-md h-full" />
                             <div class="flex flex-col p-2 space-y-2">
                                 <p class="text-sm font-semibold leading-none truncate">Lorem ipsum dolor sit amet

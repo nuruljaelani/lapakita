@@ -22,19 +22,19 @@
                             <ul class="splide__list">
                                 <li class="splide__slide">
                                     <div class="bg-white shadow rounded-lg border">
-                                        <img src="{{ asset('assets/images/products/S22_Ultra_Carousel_GroupKV_MO.webp') }}"
+                                        <img src="{{ secure_asset('assets/images/products/S22_Ultra_Carousel_GroupKV_MO.webp') }}"
                                             class="rounded-lg" alt="">
                                     </div>
                                 </li>
                                 <li class="splide__slide">
                                     <div class="bg-white shadow rounded-lg border">
-                                        <img src="{{ asset('assets/images/products/f32e749f5cc76d3a117b04a4ad5a72e8.jpg') }}"
+                                        <img src="{{ secure_asset('assets/images/products/f32e749f5cc76d3a117b04a4ad5a72e8.jpg') }}"
                                             class="rounded-lg" alt="">
                                     </div>
                                 </li>
                                 <li class="splide__slide">
                                     <div class="bg-white shadow rounded-lg border">
-                                        <img src="{{ asset('assets/images/products/ThumbnailE.png') }}" class="rounded-lg"
+                                        <img src="{{ secure_asset('assets/images/products/ThumbnailE.png') }}" class="rounded-lg"
                                             alt="">
                                     </div>
                                 </li>
@@ -46,15 +46,15 @@
                         <div class="splide__track">
                             <ul class="splide__list">
                                 <li class="splide__slide">
-                                    <img src="{{ asset('assets/images/products/S22_Ultra_Carousel_GroupKV_MO.webp') }}"
+                                    <img src="{{ secure_asset('assets/images/products/S22_Ultra_Carousel_GroupKV_MO.webp') }}"
                                         alt="">
                                 </li>
                                 <li class="splide__slide">
-                                    <img src="{{ asset('assets/images/products/f32e749f5cc76d3a117b04a4ad5a72e8.jpg') }}"
+                                    <img src="{{ secure_asset('assets/images/products/f32e749f5cc76d3a117b04a4ad5a72e8.jpg') }}"
                                         alt="">
                                 </li>
                                 <li class="splide__slide">
-                                    <img src="{{ asset('assets/images/products/ThumbnailE.png') }}" alt="">
+                                    <img src="{{ secure_asset('assets/images/products/ThumbnailE.png') }}" alt="">
                                 </li>
                             </ul>
                         </div>
@@ -84,7 +84,7 @@
                     <hr>
                     <div class="flex flex-col space-y-2">
                         <div class="flex space-x-2">
-                            <img src="{{ asset('assets/images/brand/samsung2.png') }}" class="w-10" />
+                            <img src="{{ secure_asset('assets/images/brand/samsung2.png') }}" class="w-10" />
                             <div class="flex flex-col">
                                 <p class="font-semibold text-gray-700 text-[10pt] md:text-[12pt]">Samsung Official</p>
                                 <p class="text-gray-500 text-sm">Online 5 menit lalu</p>

@@ -4,7 +4,7 @@
         <div class="flex max-w-6xl mx-auto py-2 md:py-4 space-x-2 md:space-x-4 items-center px-4 lg:px-0">
             <div class="md:w-1/5 hidden md:block">
                 <a href="{{route('frontsite.index')}}">
-                    <img src="{{ asset('assets/images/logo/lapakita4.png') }}" class="h-6 md:h-8 lg:h-10" />
+                    <img src="{{ secure_asset('assets/images/logo/lapakita4.png') }}" class="h-6 md:h-8 lg:h-10" />
                 </a>
             </div>
             <div class="flex items-center bg-white rounded-md px-2 w-3/5">

@@ -115,9 +115,9 @@
 @endsection
 
 @section('script')
-    <script src="{{ asset('assets/js/jquery-3.5.1.js') }}"></script>
-    <script src="{{ asset('assets/js/jquery.dataTables.min.js') }}"></script>
-    <script src="{{ asset('assets/js/dataTables.bootstrap5.min.js') }}"></script>
+    <script src="{{ secure_asset('assets/js/jquery-3.5.1.js') }}"></script>
+    <script src="{{ secure_asset('assets/js/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ secure_asset('assets/js/dataTables.bootstrap5.min.js') }}"></script>
     <script>
         let table = $('#table1').DataTable({
             processing: true,
