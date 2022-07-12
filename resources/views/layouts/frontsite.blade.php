@@ -14,7 +14,7 @@
     @vite('resources/css/app.css')
 </head>
 
-<body>
+<body></body>
     <div>
         <x-navbar />
         <main class="mx-auto max-w-6xl px-4 lg:px-0 my-10 mt-16 md:mt-20 lg:mt-[5.5rem]">
