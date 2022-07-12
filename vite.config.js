@@ -8,8 +8,8 @@ export default defineConfig({
             'resources/js/app.js',
         ]),
     ],
-    // server: {
-    //     https: true,
-    //     host: 'localhost'
-    // }
+    server: {
+        https: true,
+        host: '192.168.1.4'
+    }
 });
