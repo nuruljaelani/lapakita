@@ -319,7 +319,7 @@
 @section('script')
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const splide1 = new Splide('.splide', {
+            const splide1 = new Splide('#splide-banner', {
                 type: 'loop',
                 perPage: 1,
                 autoplay: 'play'
