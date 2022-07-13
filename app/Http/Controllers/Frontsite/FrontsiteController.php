@@ -28,4 +28,9 @@ class FrontsiteController extends Controller
     {
         return view('frontsite.product.detail-product');
     }
+
+    public function cart()
+    {
+        return view('frontsite.cart');
+    }
 }

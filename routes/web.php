@@ -22,6 +22,7 @@ Route::controller(FrontsiteController::class)->name('frontsite.')->group(functio
     Route::get('/login', 'login')->name('login');
     Route::get('/register', 'register')->name('register');
     Route::get('/produk/detail', 'detailProduct')->name('detail-product');
+    Route::get('/cart', 'cart')->name('cart');
 });
 
 Route::name('backsite.')->prefix('backsite')->group(function() {
