@@ -5,8 +5,8 @@
 @endsection
 
 @section('content')
-    <div class="flex py-4 space-x-4 md:space-x-8">
-        <div class="flex flex-col w-2/3 space-y-4">
+    <div class="flex flex-col md:flex-row py-4 space-x-0 md:space-x-8 space-y-2 md:space-y-0">
+        <div class="flex flex-col w-full md:w-2/3 space-y-4">
             <p class="text-base sm:text-lg md:text-xl font-bold">Keranjang</p>
             <div class="flex flex-col space-y-4 md:space-y-6">
                 <div class="bg-white rounded-lg py-2 flex space-x-2 shadow drop-shadow-lg px-4">
@@ -20,12 +20,12 @@
                     </div>
                     <hr>
                     <div class="flex p-4 space-x-4">
-                        <div class="flex w-1/5 space-x-2">
+                        <div class="flex w-1/4 md:w-1/5 space-x-2">
                             <input type="checkbox" />
                             <img src="{{ secure_asset('assets/images/products/S22_Ultra_Carousel_GroupKV_MO.webp') }}"
                                 class="h-10 md:h-20 lg:h-28" />
                         </div>
-                        <div class="w-3/5 flex flex-col">
+                        <div class="w-2/4 md:w-3/5 flex flex-col">
                             <p class="truncate font-medium text-indigo-700">Lorem ipsum, dolor sit amet consectetur
                                 adipisicing elit. Id, adipisci.</p>
                             <p class="text-gray-800 font-semibold">Rp15.999.000</p>
@@ -36,24 +36,24 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col w-1/5 items-end justify-end space-y-4">
+                        <div class="flex flex-col w-1/4 md:w-1/5 items-end justify-end space-y-4">
                             <div class="flex space-x-2">
-                                <span class="material-icons">
+                                <span class="material-icons text-sm md:text-base">
                                     favorite_border
                                 </span>
-                                <span class="material-icons">
+                                <span class="material-icons text-sm md:text-base">
                                     delete_outline
                                 </span>
                             </div>
                             <div class="flex items-center space-x-2 border rounded-lg">
                                 <button type="button" class="p-2">
-                                    <span class="material-icons">
+                                    <span class="material-icons text-sm md:text-base">
                                         add
                                     </span>
                                 </button>
-                                <p>1</p>
+                                <p class="text-sm md:text-base">1</p>
                                 <button type="button" class="p-2">
-                                    <span class="material-icons">
+                                    <span class="material-icons text-sm md:text-base">
                                         remove
                                     </span>
                                 </button>
@@ -86,22 +86,22 @@
                         </div>
                         <div class="flex flex-col w-1/5 items-end justify-end space-y-4">
                             <div class="flex space-x-2">
-                                <span class="material-icons">
+                                <span class="material-icons text-sm md:text-base">
                                     favorite_border
                                 </span>
-                                <span class="material-icons">
+                                <span class="material-icons text-sm md:text-base">
                                     delete_outline
                                 </span>
                             </div>
                             <div class="flex items-center space-x-2 border rounded-lg">
                                 <button type="button" class="p-2">
-                                    <span class="material-icons">
+                                    <span class="material-icons text-sm md:text-base">
                                         add
                                     </span>
                                 </button>
-                                <p>1</p>
+                                <p class="text-sm md:text-base">1</p>
                                 <button type="button" class="p-2">
-                                    <span class="material-icons">
+                                    <span class="material-icons text-sm md:text-base">
                                         remove
                                     </span>
                                 </button>
@@ -111,7 +111,7 @@
                 </div>
             </div>
         </div>
-        <div class="flex flex-col w-1/3">
+        <div class="flex flex-col w-full md:w-1/3">
             <div class="flex flex-col space-y-2">
                 <p class="text-xs text-gray-500 font-medium">Voucher & promo</p>
                 <div class="bg-white shadow rounded-lg p-3 flex space-x-2">

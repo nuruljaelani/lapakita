@@ -5,24 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title')</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="{{ secure_asset('assets/splide/css/splide.min.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('assets/css/style.css') }}">
     <script defer src="https://unpkg.com/alpinejs@3.10.2/dist/cdn.min.js"></script>
     @vite('resources/css/app.css')
 </head>
 
-<body></body>
-    <div>
+<body x-data="{ gray: false }">
+    <div class="relative">
         <x-navbar />
-        <main class="mx-auto max-w-6xl px-4 lg:px-0 my-10 mt-16 md:mt-20 lg:mt-[5.5rem]">
+        <div x-show="gray" :class="gray ? 'bg-gray-800/75 absolute inset-0 w-full z-40 h-full' : ''" x-transition></div>
+        <main class="mx-auto max-w-6xl px-4 lg:px-0 my-10 pt-[0.5rem] md:pt-8 lg:pt-[3rem]">
             @yield('content')
         </main>
         <hr>
         <footer>
-            <div class="flex flex-wrap justify-between mx-auto max-w-6xl px-4 md:px-2 lg:px-0 py-4 md:py-8">
+            <div class="flex flex-wrap gap-2 justify-between mx-auto max-w-6xl px-4 md:px-2 lg:px-0 py-4 md:py-8">
                 <div class="flex flex-col space-y-2">
                     <p class="uppercase font-semibold text-gray-700">lapakita</p>
                     <div class="flex flex-col space-y-1 text-sm text-gray-700">
@@ -77,7 +78,7 @@
         </footer>
     </div>
     <script src="{{ secure_asset('assets/splide/js/splide.min.js') }}" lang="javascript/text"></script>
-    @yield("script")
+    @yield('script')
 </body>
 
 </html>

@@ -53,6 +53,9 @@
                             <li class="submenu-item ">
                                 <a href="{{ route('backsite.subcategory.index') }}">Sub Category</a>
                             </li>
+                            <li class="submenu-item ">
+                                <a href="{{ route('backsite.childcategory.index') }}">Child Category</a>
+                            </li>
                         </ul>
                     </li>
 
