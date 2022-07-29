@@ -53,49 +53,53 @@
                 <div class="flex flex-col bg-white shadow drop-shadow rounded-xl space-y-2">
                     <p class="font-medium text-indigo-800 p-4">Profil</p>
                     <hr>
-                    <div class="flex flex-col p-4 space-y-4">
+                    <form class="flex flex-col p-4 space-y-4" method="POST" action="{{route('frontsite.member.store')}}">
+                        @csrf
                         <div
                             class="flex flex-col bg-gray-50 rounded-2xl px-4 py-2 w-2/3 ring-2 ring-gray-200 focus-within:ring-sky-500">
                             <label class="text-xs text-sky-700">Nama Lengkap</label>
-                            <input type="text" class="outline-none bg-gray-50" placeholder="Nama Lengkap" />
+                            <input type="text" class="outline-none bg-gray-50" placeholder="Nama Lengkap" value="{{$user->name}}" />
                         </div>
                         <div
                             class="flex flex-col bg-gray-50 rounded-2xl px-4 py-2 w-2/3 ring-2 ring-gray-200 focus-within:ring-sky-500">
                             <label class="text-xs text-sky-700">Email</label>
-                            <input type="text" class="outline-none bg-gray-50" placeholder="Email" />
+                            <input type="text" class="outline-none bg-gray-50" placeholder="Email" value="{{$user->email}}" />
                         </div>
                         <div
                             class="flex flex-col bg-gray-50 rounded-2xl px-4 py-2 w-2/3 ring-2 ring-gray-200 focus-within:ring-sky-500">
                             <label class="text-xs text-sky-700">Password</label>
-                            <input type="text" class="outline-none bg-gray-50" placeholder="Password" />
+                            <input type="text" class="outline-none bg-gray-50 cursor-not-allowed" placeholder="Password" disabled />
                         </div>
                         <div
                             class="flex flex-col bg-gray-50 rounded-2xl px-4 py-2 w-2/3 ring-2 ring-gray-200 focus-within:ring-sky-500">
                             <label class="text-xs text-sky-700">Nomor HP</label>
-                            <input type="text" class="outline-none bg-gray-50" placeholder="Nomor HP" />
+                            <input type="text" name="phone" class="outline-none bg-gray-50" placeholder="Nomor HP" value="{{$profile->phone}}" />
+                            @error('phone')
+                                <span class="text-xs text-red-500">{{$message}}</span>
+                            @enderror
                         </div>
                         <div
                             class="flex flex-col bg-gray-50 rounded-2xl px-4 py-2 w-2/3 ring-2 ring-gray-200 focus-within:ring-sky-500">
                             <label class="text-xs text-sky-700">Tanggal Lahir</label>
-                            <input type="date" class="outline-none bg-gray-50" placeholder="Password" />
+                            <input type="date" name="birthdate" class="outline-none bg-gray-50" placeholder="Password" value="{{$profile->birthdate}}" />
                         </div>
                         <div class="flex flex-col w-full">
                             <p class="text-base text-gray-700 font-medium">Jenis Kelamin</p>
                             <div class="flex space-x-4 items-center">
                                 <div class="flex items-center space-x-1">
-                                    <input type="radio" name="gender" class="bg-gray-50" />
+                                    <input type="radio" name="gender" class="bg-gray-50" value="laki-laki" {{ ($profile->gender == 'laki-laki') ? 'checked': '' }} />
                                     <label>Laki-laki</label>
                                 </div>
                                 <div class="flex items-center space-x-1">
-                                    <input type="radio" name="gender" class="bg-gray-50" />
+                                    <input type="radio" name="gender" class="bg-gray-50" value="perempuan" {{ $profile->gender == 'perempuan' ? 'checked': '' }} />
                                     <label>Perempuan</label>
                                 </div>
                             </div>
                         </div>
-                        <button class="bg-gray-100 rounded-2xl py-4 px-6 font-medium text-gray-500 w-fit">
+                        <button type="submit" class="bg-gray-100 rounded-2xl py-4 px-6 font-medium text-gray-500 w-fit">
                             Simpan
                         </button>
-                    </div>
+                    </form>
                 </div>
             </div>
 

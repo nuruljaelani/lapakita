@@ -5,7 +5,9 @@ use App\Http\Controllers\Backsite\ChildcategoryController;
 use App\Http\Controllers\Backsite\DashboardController;
 use App\Http\Controllers\Backsite\SubcategoryController;
 use App\Http\Controllers\Frontsite\FrontsiteController;
+use App\Http\Controllers\Frontsite\MemberController;
 use App\Http\Controllers\Frontsite\SellerController;
+use App\Http\Controllers\Frontsite\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,22 +21,36 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::domain('seller.ecommerce-app.test')
-    ->controller(SellerController::class)
-    ->name('seller.')
-    ->group(function () {
+Route::name('frontsite.')->group(function () {
+    Route::controller(FrontsiteController::class)->group(function () {
         Route::get('/', 'index')->name('index');
+        Route::get('/login', 'login')->name('login');
+        Route::get('/register', 'register')->name('register');
+        Route::get('/produk/detail', 'detailProduct')->name('detail-product');
+        Route::get('/cart', 'cart')->name('cart');
+        Route::get('/c/produk', 'pCategory')->name('pCategory');
     });
 
-Route::controller(FrontsiteController::class)->name('frontsite.')->group(function () {
-    Route::get('/', 'index')->name('index');
-    Route::get('/login', 'login')->name('login');
-    Route::get('/register', 'register')->name('register');
-    Route::get('/produk/detail', 'detailProduct')->name('detail-product');
-    Route::get('/cart', 'cart')->name('cart');
-    Route::get('/c/produk', 'pCategory')->name('pCategory');
-    Route::get('/member/profile', 'profile')->name('profile');
+    Route::controller(MemberController::class)
+        ->middleware(['auth', 'role:user'])
+        ->prefix('member')
+        ->name('member.')
+        ->group(function () {
+            Route::get('/profile', 'index')->name('profile');
+            Route::post('/store', 'store')->name('store');
+        });
 });
+
+Route::controller(SellerController::class)
+    ->name('seller.')
+    ->prefix('seller')
+    ->group(function () {
+        Route::get('/', 'index')->name('index');
+        Route::get('/login', 'login')->name('login');
+        Route::get('/register', 'register')->name('register');
+        Route::post('/register', 'create')->name('daftar');
+        Route::get('/dashboard', 'dashboard')->name('dashboard')->middleware(['auth', 'role:seller']);
+    });
 
 Route::name('backsite.')->prefix('backsite')->group(function () {
     Route::controller(DashboardController::class)->name('dashboard.')->group(function () {

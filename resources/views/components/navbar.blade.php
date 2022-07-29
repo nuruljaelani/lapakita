@@ -1,6 +1,6 @@
 <div>
     <!-- Nothing worth having comes easy. - Theodore Roosevelt -->
-    <nav class="bg-indigo-500 fixed inset-0 z-50 pt-1 h-fit flex flex-col space-y-1" x-data="{ cart: false, category: false }">
+    <nav class="bg-indigo-500 fixed inset-0 z-50 pt-1 h-fit flex flex-col space-y-1" x-data="{ cart: false, category: false, profile: false }">
         <div class="flex justify-end max-w-6xl mx-auto w-full md:space-x-4 items-center px-4 lg:px-0">
             <a href="{{ route('seller.index') }}" class="text-xs text-white tracking-tight font-medium">Jual di
                 lapakita</a>
@@ -31,6 +31,10 @@
                     local_mall
                 </a>
                 <p class="text-white">|</p>
+                @auth
+                    <a href="{{route('frontsite.member.profile')}}" class="cursor-pointer text-white font-medium" @mouseover="profile = true, gray = true" @mouseout="profile = false, gray = false">{{Auth::user()->name}}</a>
+                @endauth
+                @guest    
                 <a href="{{ route('frontsite.login') }}"
                     class="border-2 border-white rounded-md text-xs text-white p-2 font-semibold">
                     Masuk
@@ -39,10 +43,11 @@
                     class="bg-white hidden md:block rounded-md text-xs text-indigo-800 border-2 border-white p-2 font-semibold">
                     Daftar
                 </a>
+                @endguest
             </div>
             <div x-show="cart" @mouseenter="cart = true" @mouseleave="cart = false" @mouseover="gray = true"
                 @mouseout="gray = false"
-                class="bg-white rounded-lg absolute shadow-lg drop-shadow-md backdrop-blur p-4 right-12 top-[3.4rem] w-fit"
+                class="bg-white rounded-lg absolute shadow-lg drop-shadow-md backdrop-blur p-4 right-12 top-[4rem] w-fit"
                 x-transition.duration.400ms>
                 <div class="flex flex-col items-center px-6">
                     <img src="{{ secure_asset('assets/images/Cart.png') }}" class="w-20 md:w-40" />
@@ -114,5 +119,24 @@
                 </div>
             </div>
         </div>
+        @auth    
+        <div x-show="profile" x-transition class="flex flex-col bg-white rounded py-2 absolute top-[3.6rem] right-8 space-y-2" @mouseover="profile = true, gray = true" @mouseout="profile = false, gray = false">
+            <div class="flex p-2 space-x-2">
+                <img src="{{secure_asset('assets/images/faces/2.jpg')}}" class="w-8 rounded-full" />
+                <div class="flex flex-col">
+                    <p class="text-sm font-medium">{{ Auth::user()->name }}</p>
+                    <p class="text-[8pt] text-gray-600">Classic member</p>
+                </div>
+            </div>
+            <hr>
+            <form method="POST" action="{{route('logout')}}">
+                @csrf
+                <button type="submit" class="px-4 flex space-x-1 text-gray-600 items-center">
+                    <span class="material-icons text-sm">logout</span>
+                    <p class="text-sm">Keluar</p>
+                </button>  
+            </form>
+        </div>
+        @endauth
     </nav>
 </div>

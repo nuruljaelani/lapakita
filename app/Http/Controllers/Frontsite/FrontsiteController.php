@@ -39,8 +39,4 @@ class FrontsiteController extends Controller
         return view('frontsite.category.product-per-category');
     }
 
-    public function profile()
-    {
-        return view('frontsite.user.profile');
-    }
 }

@@ -17,8 +17,8 @@
 <body x-data="{ gray: false }">
     <div class="relative">
         <x-navbar />
-        <div x-show="gray" :class="gray ? 'bg-gray-800/75 absolute inset-0 w-full z-40 h-full' : ''" x-transition></div>
-        <main class="mx-auto max-w-6xl px-4 lg:px-0 my-10 pt-[0.5rem] md:pt-8 lg:pt-[3rem]">
+        <div x-show="gray" :class="gray ? 'bg-gray-800/75 absolute inset-0 w-full z-40 h-full' : ''"></div>
+        <main class="mx-auto max-w-6xl px-4 lg:px-0 my-10 pt-[1.2rem] md:pt-10 lg:pt-[3rem]">
             @yield('content')
         </main>
         <hr>
